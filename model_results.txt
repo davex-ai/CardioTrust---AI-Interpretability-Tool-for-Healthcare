@@ -1,5 +1,4 @@
 
-“Why AI must explain itself in healthcare — and how I built one
 
 
 
@@ -141,4 +140,304 @@ Full Report:
     accuracy                           0.83       184
    macro avg       0.83      0.82      0.82       184
 weighted avg       0.83      0.83      0.83       184
+
+
+========================================
+Experiment: Dataset C (drop ca, thal) | Model: XGBOOST
+Best Params: {}
+ROC AUC SCORE: 0.9048302247728359
+Confusion Matrix: [[64 18]
+ [10 92]]
+Accuracy: 0.8478 | F1-Score: 0.8468 | Recall: 0.8478 | Precision: 0.8491
+Important Features:
+exang_True            0.324205
+cp_atypical angina    0.092214
+exang_Unknown         0.069732
+cp_non-anginal        0.053853
+sex_Male              0.051794
+slope_upsloping       0.049793
+chol                  0.044165
+cp_typical angina     0.040658
+age                   0.034477
+oldpeak               0.030074
+dtype: float32
+Full Report:
+              precision    recall  f1-score   support
+
+           0       0.86      0.78      0.82        82
+           1       0.84      0.90      0.87       102
+
+    accuracy                           0.85       184
+   macro avg       0.85      0.84      0.84       184
+weighted avg       0.85      0.85      0.85       184
+
+
+========================================
+Experiment: Dataset C (drop ca, thal) | Model: XGBOOST
+Best Params: {}
+ROC AUC SCORE: 0.9048302247728359
+Confusion Matrix: [[64 18]
+ [10 92]]
+Accuracy: 0.8478 | F1-Score: 0.8468 | Recall: 0.8478 | Precision: 0.8491
+Important Features:
+exang_True            0.324205
+cp_atypical angina    0.092214
+exang_Unknown         0.069732
+cp_non-anginal        0.053853
+sex_Male              0.051794
+slope_upsloping       0.049793
+chol                  0.044165
+cp_typical angina     0.040658
+age                   0.034477
+oldpeak               0.030074
+dtype: float32
+Full Report:
+              precision    recall  f1-score   support
+
+           0       0.86      0.78      0.82        82
+           1       0.84      0.90      0.87       102
+
+    accuracy                           0.85       184
+   macro avg       0.85      0.84      0.84       184
+weighted avg       0.85      0.85      0.85       184
+
+
+========================================
+Experiment: Dataset C (drop ca, thal) | Model: XGBOOST
+Best Params: {}
+ROC AUC SCORE: 0.9048302247728359
+Confusion Matrix: [[64 18]
+ [10 92]]
+Accuracy: 0.8478 | F1-Score: 0.8468 | Recall: 0.8478 | Precision: 0.8491
+Important Features:
+exang_True            0.324205
+cp_atypical angina    0.092214
+exang_Unknown         0.069732
+cp_non-anginal        0.053853
+sex_Male              0.051794
+slope_upsloping       0.049793
+chol                  0.044165
+cp_typical angina     0.040658
+age                   0.034477
+oldpeak               0.030074
+dtype: float32
+Full Report:
+              precision    recall  f1-score   support
+
+           0       0.86      0.78      0.82        82
+           1       0.84      0.90      0.87       102
+
+    accuracy                           0.85       184
+   macro avg       0.85      0.84      0.84       184
+weighted avg       0.85      0.85      0.85       184
+
+
+========================================
+Experiment: Dataset C (drop ca, thal) | Model: XGBOOST
+Best Params: {}
+ROC AUC SCORE: 0.9048302247728359
+Confusion Matrix: [[64 18]
+ [10 92]]
+Accuracy: 0.8478 | F1-Score: 0.8468 | Recall: 0.8478 | Precision: 0.8491
+Important Features:
+exang_True            0.324205
+cp_atypical angina    0.092214
+exang_Unknown         0.069732
+cp_non-anginal        0.053853
+sex_Male              0.051794
+slope_upsloping       0.049793
+chol                  0.044165
+cp_typical angina     0.040658
+age                   0.034477
+oldpeak               0.030074
+dtype: float32
+Full Report:
+              precision    recall  f1-score   support
+
+           0       0.86      0.78      0.82        82
+           1       0.84      0.90      0.87       102
+
+    accuracy                           0.85       184
+   macro avg       0.85      0.84      0.84       184
+weighted avg       0.85      0.85      0.85       184
+
+
+========================================
+Experiment: Dataset C (drop ca, thal) | Model: XGBOOST
+Best Params: {}
+ROC AUC SCORE: 0.9048302247728359
+Confusion Matrix: [[64 18]
+ [10 92]]
+Accuracy: 0.8478 | F1-Score: 0.8468 | Recall: 0.8478 | Precision: 0.8491
+Important Features:
+exang_True            0.324205
+cp_atypical angina    0.092214
+exang_Unknown         0.069732
+cp_non-anginal        0.053853
+sex_Male              0.051794
+slope_upsloping       0.049793
+chol                  0.044165
+cp_typical angina     0.040658
+age                   0.034477
+oldpeak               0.030074
+dtype: float32
+Full Report:
+              precision    recall  f1-score   support
+
+           0       0.86      0.78      0.82        82
+           1       0.84      0.90      0.87       102
+
+    accuracy                           0.85       184
+   macro avg       0.85      0.84      0.84       184
+weighted avg       0.85      0.85      0.85       184
+
+
+========================================
+Experiment: Dataset C (drop ca, thal) | Model: XGBOOST
+Best Params: {}
+ROC AUC SCORE: 0.9048302247728359
+Confusion Matrix: [[64 18]
+ [10 92]]
+Accuracy: 0.8478 | F1-Score: 0.8468 | Recall: 0.8478 | Precision: 0.8491
+Important Features:
+exang_True            0.324205
+cp_atypical angina    0.092214
+exang_Unknown         0.069732
+cp_non-anginal        0.053853
+sex_Male              0.051794
+slope_upsloping       0.049793
+chol                  0.044165
+cp_typical angina     0.040658
+age                   0.034477
+oldpeak               0.030074
+dtype: float32
+Full Report:
+              precision    recall  f1-score   support
+
+           0       0.86      0.78      0.82        82
+           1       0.84      0.90      0.87       102
+
+    accuracy                           0.85       184
+   macro avg       0.85      0.84      0.84       184
+weighted avg       0.85      0.85      0.85       184
+
+
+========================================
+Experiment: Dataset C (drop ca, thal) | Model: XGBOOST
+Best Params: {}
+ROC AUC SCORE: 0.9048302247728359
+Confusion Matrix: [[64 18]
+ [10 92]]
+Accuracy: 0.8478 | F1-Score: 0.8468 | Recall: 0.8478 | Precision: 0.8491
+Important Features:
+exang_True            0.324205
+cp_atypical angina    0.092214
+exang_Unknown         0.069732
+cp_non-anginal        0.053853
+sex_Male              0.051794
+slope_upsloping       0.049793
+chol                  0.044165
+cp_typical angina     0.040658
+age                   0.034477
+oldpeak               0.030074
+dtype: float32
+Full Report:
+              precision    recall  f1-score   support
+
+           0       0.86      0.78      0.82        82
+           1       0.84      0.90      0.87       102
+
+    accuracy                           0.85       184
+   macro avg       0.85      0.84      0.84       184
+weighted avg       0.85      0.85      0.85       184
+
+
+========================================
+Experiment: Dataset C (drop ca, thal) | Model: XGBOOST
+Best Params: {}
+ROC AUC SCORE: 0.9048302247728359
+Confusion Matrix: [[64 18]
+ [10 92]]
+Accuracy: 0.8478 | F1-Score: 0.8468 | Recall: 0.8478 | Precision: 0.8491
+Important Features:
+exang_True            0.324205
+cp_atypical angina    0.092214
+exang_Unknown         0.069732
+cp_non-anginal        0.053853
+sex_Male              0.051794
+slope_upsloping       0.049793
+chol                  0.044165
+cp_typical angina     0.040658
+age                   0.034477
+oldpeak               0.030074
+dtype: float32
+Full Report:
+              precision    recall  f1-score   support
+
+           0       0.86      0.78      0.82        82
+           1       0.84      0.90      0.87       102
+
+    accuracy                           0.85       184
+   macro avg       0.85      0.84      0.84       184
+weighted avg       0.85      0.85      0.85       184
+
+
+========================================
+Experiment: Dataset C (drop ca, thal) | Model: XGBOOST
+Best Params: {}
+ROC AUC SCORE: 0.9048302247728359
+Confusion Matrix: [[64 18]
+ [10 92]]
+Accuracy: 0.8478 | F1-Score: 0.8468 | Recall: 0.8478 | Precision: 0.8491
+Important Features:
+exang_True            0.324205
+cp_atypical angina    0.092214
+exang_Unknown         0.069732
+cp_non-anginal        0.053853
+sex_Male              0.051794
+slope_upsloping       0.049793
+chol                  0.044165
+cp_typical angina     0.040658
+age                   0.034477
+oldpeak               0.030074
+dtype: float32
+Full Report:
+              precision    recall  f1-score   support
+
+           0       0.86      0.78      0.82        82
+           1       0.84      0.90      0.87       102
+
+    accuracy                           0.85       184
+   macro avg       0.85      0.84      0.84       184
+weighted avg       0.85      0.85      0.85       184
+
+
+========================================
+Experiment: Dataset C (drop ca, thal) | Model: XGBOOST
+Best Params: {}
+ROC AUC SCORE: 0.9048302247728359
+Confusion Matrix: [[64 18]
+ [10 92]]
+Accuracy: 0.8478 | F1-Score: 0.8468 | Recall: 0.8478 | Precision: 0.8491
+Important Features:
+exang_True            0.324205
+cp_atypical angina    0.092214
+exang_Unknown         0.069732
+cp_non-anginal        0.053853
+sex_Male              0.051794
+slope_upsloping       0.049793
+chol                  0.044165
+cp_typical angina     0.040658
+age                   0.034477
+oldpeak               0.030074
+dtype: float32
+Full Report:
+              precision    recall  f1-score   support
+
+           0       0.86      0.78      0.82        82
+           1       0.84      0.90      0.87       102
+
+    accuracy                           0.85       184
+   macro avg       0.85      0.84      0.84       184
+weighted avg       0.85      0.85      0.85       184
 
