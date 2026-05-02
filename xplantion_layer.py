@@ -9,13 +9,13 @@ model.load_model("model.ubj")
 
 # 2. Initialize SHAP Explainer
 explainer = shap.TreeExplainer(model)
-# shap_values = explainer.shap_values(X_test)
-#
-# # explainer = shap.Explainer(model)
-# # shap_values = explainer(X_test)
-#
-# # 3. Summary Plot
-# shap.summary_plot(shap_values, X_test)
+shap_values = explainer.shap_values(X_test)
+
+# explainer = shap.Explainer(model)
+# shap_values = explainer(X_test)
+
+# 3. Summary Plot
+shap.summary_plot(shap_values, X_test)
 
 
 
