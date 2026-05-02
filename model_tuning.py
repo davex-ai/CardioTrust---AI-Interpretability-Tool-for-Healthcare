@@ -135,7 +135,7 @@ def run_final_model(df, name):
     print(f"Final Model: {name}")
     print(f"Accuracy: {acc:.4f} | F1: {f1:.4f} | ROC AUC: {roc_auc:.4f}")
     final_model.save_model("model.ubj")
-    return final_model
+    return final_model, X_test, y_test, X_train
 
 
 df_c_tuning = df_c.drop("dataset", axis=1)
