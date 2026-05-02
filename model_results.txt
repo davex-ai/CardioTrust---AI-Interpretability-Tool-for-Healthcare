@@ -1,0 +1,144 @@
+
+“Why AI must explain itself in healthcare — and how I built one
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================================
+Experiment: Dataset C (drop ca, thal) | Model: XGBOOST
+Best Params: {'max_depth': 3, 'learning_rate': 0.010081523953294461, 'n_estimators': 477, 'subsample': 0.998437874354703, 'colsample_bytree': 0.8155957977429815}
+Accuracy: 0.8533 | F1-Score: 0.8524 | Recall: 0.8533 | Precision: 0.8541
+Important Features:
+exang_True               0.267223
+cp_atypical angina       0.095694
+dataset_Switzerland      0.072680
+cp_non-anginal           0.067115
+chol                     0.064053
+slope_flat               0.060912
+sex_Male                 0.059781
+dataset_VA Long Beach    0.053089
+age                      0.049569
+oldpeak                  0.046899
+dtype: float32
+Full Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.79      0.83        82
+           1       0.84      0.90      0.87       102
+
+    accuracy                           0.85       184
+   macro avg       0.86      0.85      0.85       184
+weighted avg       0.85      0.85      0.85       184
+
+
+========================================
+Experiment: Dataset C (drop ca, thal) | Model: XGBOOST
+Best Params: {'max_depth': 3, 'learning_rate': 0.020402107038352896, 'n_estimators': 200, 'subsample': 0.9058959125861163, 'colsample_bytree': 0.878220087404052}
+ROC AUC SCORE: 0.917144906743185
+Confusion Matrix: [[66 16]
+ [12 90]]
+Accuracy: 0.8478 | F1-Score: 0.8474 | Recall: 0.8478 | Precision: 0.8478
+Important Features:
+exang_True            0.282256
+cp_atypical angina    0.091956
+chol                  0.069603
+sex_Male              0.065889
+slope_flat            0.060605
+cp_non-anginal        0.054885
+age                   0.051575
+oldpeak               0.050700
+thalch                0.044600
+cp_typical angina     0.033443
+dtype: float32
+Full Report:
+              precision    recall  f1-score   support
+
+           0       0.85      0.80      0.82        82
+           1       0.85      0.88      0.87       102
+
+    accuracy                           0.85       184
+   macro avg       0.85      0.84      0.85       184
+weighted avg       0.85      0.85      0.85       184
+
+
+========================================
+Experiment: Dataset C (drop ca, thal) | Model: XGBOOST
+Best Params: {'max_depth': 3, 'learning_rate': 0.032341190986509324, 'n_estimators': 155, 'subsample': 0.8455569617631731, 'colsample_bytree': 0.9747241412806394}
+ROC AUC SCORE: 0.9179818268770923
+Confusion Matrix: [[65 17]
+ [10 92]]
+Accuracy: 0.8533 | F1-Score: 0.8524 | Recall: 0.8533 | Precision: 0.8541
+Important Features:
+exang_True            0.273333
+cp_atypical angina    0.090812
+slope_flat            0.076282
+sex_Male              0.064573
+cp_non-anginal        0.062458
+chol                  0.059724
+age                   0.050376
+oldpeak               0.046541
+thalch                0.042089
+cp_typical angina     0.032159
+dtype: float32
+Full Report:
+              precision    recall  f1-score   support
+
+           0       0.87      0.79      0.83        82
+           1       0.84      0.90      0.87       102
+
+    accuracy                           0.85       184
+   macro avg       0.86      0.85      0.85       184
+weighted avg       0.85      0.85      0.85       184
+
+
+========================================
+Experiment: Dataset C (drop ca, thal) | Model: XGBOOST
+Best Params: {'max_depth': 3, 'learning_rate': 0.19193478373343806, 'n_estimators': 100, 'subsample': 0.7538954300794005, 'colsample_bytree': 0.9092904172499189}
+ROC AUC SCORE: 0.9076398852223817
+Confusion Matrix: [[64 18]
+ [14 88]]
+Accuracy: 0.8261 | F1-Score: 0.8256 | Recall: 0.8261 | Precision: 0.8259
+Important Features:
+exang_True            0.243429
+cp_atypical angina    0.104640
+sex_Male              0.076303
+cp_non-anginal        0.068336
+slope_flat            0.059567
+slope_upsloping       0.058943
+restecg_normal        0.046162
+age                   0.046055
+oldpeak               0.043042
+chol                  0.040148
+dtype: float32
+Full Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.78      0.80        82
+           1       0.83      0.86      0.85       102
+
+    accuracy                           0.83       184
+   macro avg       0.83      0.82      0.82       184
+weighted avg       0.83      0.83      0.83       184
+
