@@ -1,4 +1,5 @@
-
+import shap
+import joblib
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.metrics import accuracy_score, classification_report, f1_score, recall_score, precision_score, \
     confusion_matrix, roc_auc_score
@@ -132,12 +133,38 @@ def run_final_model(df, name):
     f1 = f1_score(y_test, preds, average='weighted')
     roc_auc = roc_auc_score(y_test, probs)
 
+    # Save artifacts
+    joblib.dump(X_train, "X_train.pkl")
+    joblib.dump(X_test, "X_test.pkl")
+    joblib.dump(y_test, "y_test.pkl")
+    joblib.dump(X.columns.tolist(), "feature_names.pkl")
+
+    results_df = X_test.copy()
+    results_df['actual'] = y_test.values
+    results_df['pred'] = preds
+
+    # False Positives (pred=1 but actual=0)
+    false_positives = results_df[(results_df['pred'] == 1) & (results_df['actual'] == 0)]
+    # False Negatives (pred=0 but actual=1)
+    false_negatives = results_df[(results_df['pred'] == 0) & (results_df['actual'] == 1)]
+
+    false_positives.to_csv("false_positives.csv", index=False)
+    false_negatives.to_csv("false_negatives.csv", index=False)
+    explainer = shap.TreeExplainer(final_model)
+    shap_values = explainer.shap_values(X_test)
+    shap_df = pd.DataFrame(shap_values, columns=X_test.columns)
+
+    # Add SHAP values
+    for col in shap_df.columns:
+        results_df[f"shap_{col}"] = shap_df[col]
+    results_df.to_csv("prediction_explanations.csv", index=False)
+
     print(f"Final Model: {name}")
     print(f"Accuracy: {acc:.4f} | F1: {f1:.4f} | ROC AUC: {roc_auc:.4f}")
     final_model.save_model("model.ubj")
-    return final_model, X_test, y_test, X_train
+    return final_model
 
 
 df_c_tuning = df_c.drop("dataset", axis=1)
-run_experiment(df_c_tuning, "Dataset C (drop ca, thal)")
-# run_final_model(df_c_tuning, "Dataset C (drop ca, thal)")
+# run_experiment(df_c_tuning, "Dataset C (drop ca, thal)")
+run_final_model(df_c_tuning, "Dataset C (drop ca, thal)")
