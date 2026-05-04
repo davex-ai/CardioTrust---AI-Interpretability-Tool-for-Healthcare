@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divSKNC0I5ZROHKJ7Y"></div>
+        <div class="lime top_div" id="top_divVV61KQ0Q126TCF9"></div>
         
         <script>
-        var top_div = d3.select('#top_divSKNC0I5ZROHKJ7Y').classed('lime top_div', true);
+        var top_div = d3.select('#top_divVV61KQ0Q126TCF9').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["Healthy", "Heart Disease"], [0.5907670259475708, 0.4092329740524292]);
+            var pp = new lime.PredictProba(pp_svg, ["Healthy", "Heart Disease"], [0.5066207647323608, 0.49337926506996155]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["Healthy", "Heart Disease"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["exang_True <= 0.00", -0.19898610355562293], ["cp_atypical angina > 0.00", -0.13220674718495376], ["slope_flat <= 0.00", -0.09777896777811189], ["thalch > 155.00", -0.09631650913391449], ["oldpeak <= 0.00", -0.08083804398001435], ["223.00 < chol <= 266.25", -0.07398614121857496], ["cp_non-anginal <= 0.00", 0.07218478258648116], ["fbs_True <= 0.00", -0.038367752721202276], ["54.00 < age <= 60.00", 0.03568357874708266], ["cp_typical angina <= 0.00", 0.02668262774045287]], 1, exp_div);
+                exp.show([["exang_True <= 0.00", -0.20314549724550637], ["cp_atypical angina <= 0.00", 0.14706053593265098], ["cp_non-anginal <= 0.00", 0.08413458042080296], ["slope_flat <= 0.00", -0.08388557322738453], ["177.00 < chol <= 223.00", -0.07887881954522044], ["fbs_True <= 0.00", -0.04809170974121092], ["47.00 < age <= 54.00", -0.03435524226811686], ["0.50 < oldpeak <= 1.50", -0.028866101303918007], ["cp_typical angina > 0.00", -0.027100219327697305], ["fbs_Unknown <= 0.00", -0.018742306314118405]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["exang_True", "0.00", -0.19898610355562293], ["cp_atypical angina", "1.00", -0.13220674718495376], ["slope_flat", "0.00", -0.09777896777811189], ["thalch", "164.00", -0.09631650913391449], ["oldpeak", "0.00", -0.08083804398001435], ["chol", "232.00", -0.07398614121857496], ["cp_non-anginal", "0.00", 0.07218478258648116], ["fbs_True", "0.00", -0.038367752721202276], ["age", "57.00", 0.03568357874708266], ["cp_typical angina", "0.00", 0.02668262774045287]], 1, raw_div);
+            exp.show_raw_tabular([["exang_True", "0.00", -0.20314549724550637], ["cp_atypical angina", "0.00", 0.14706053593265098], ["cp_non-anginal", "0.00", 0.08413458042080296], ["slope_flat", "0.00", -0.08388557322738453], ["chol", "200.00", -0.07887881954522044], ["fbs_True", "0.00", -0.04809170974121092], ["age", "50.00", -0.03435524226811686], ["oldpeak", "1.00", -0.028866101303918007], ["cp_typical angina", "1.00", -0.027100219327697305], ["fbs_Unknown", "0.00", -0.018742306314118405]], 1, raw_div);
         
         </script>
         </body></html>
