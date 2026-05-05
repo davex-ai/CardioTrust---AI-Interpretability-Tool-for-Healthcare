@@ -2,8 +2,6 @@ from xgboost import XGBClassifier
 import joblib
 
 
-def rotateString(self, s, goal):
-    return len(s) == len(goal) and goal in (s+s)
 def load_everything():
     model = XGBClassifier()
     model.load_model("model.ubj")
