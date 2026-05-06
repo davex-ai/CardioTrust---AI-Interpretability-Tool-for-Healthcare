@@ -80,3 +80,94 @@ explainer = shap.TreeExplainer(model)
 shap_values = explainer.shap_values(X_test)
 
 shap.summary_plot(shap_values, X_test)
+```
+# Training Details
+
+## Training Data
+
+The model is trained on a processed heart disease dataset with:
+
+- Categorical encoding (one-hot encoding)
+- Missing value handling (median imputation / "Unknown" category)
+- Feature engineering on clinical variables
+
+## Training Procedure
+
+- Model: XGBoost Classifier
+- Hyperparameter tuning: Optuna (Bayesian Optimization)
+- Evaluation: Train/test split (80/20 stratified)
+
+## Training Hyperparameters
+
+- max_depth: 3–10 (optimized)
+- learning_rate: 0.01–0.2
+- n_estimators: 100–600
+- subsample: 0.7–1.0
+- colsample_bytree: 0.7–1.0
+- evaluation metric: logloss
+
+---
+
+# Evaluation
+
+## Testing Data & Metrics
+
+### Testing Data
+Held-out 20% stratified test split from dataset
+
+### Metrics
+- Accuracy
+- F1 Score
+- Precision
+- Recall
+- ROC AUC (important for medical risk ranking)
+
+## Results
+
+- Accuracy: ~0.85
+- ROC AUC: ~0.90+
+- Strong recall for positive class (heart disease cases)
+
+---
+
+# Summary
+
+The model performs well on classification and ranking tasks but requires interpretability tools (SHAP) due to medical risk sensitivity.
+
+---
+
+# Model Examination
+
+SHAP is used to:
+
+- Explain individual predictions (local interpretability)
+- Show global feature importance
+- Analyze failure cases (false positives and false negatives)
+
+## Key insight:
+
+- Model strongly relies on features like `exang_True`, `cp_type`, and `oldpeak`
+- False negatives occur when patients have “healthy-looking” vitals but hidden risk
+
+---
+
+# Environmental Impact
+
+- Hardware Type: CPU (local training)
+- Hours used: ~2–5 hours (experimental training)
+- Cloud Provider: None (local machine)
+- Compute Region: N/A
+- Carbon Emitted: Minimal (small-scale training)
+
+---
+
+# Technical Specifications
+
+## Model Architecture
+
+XGBoost Gradient Boosted Trees optimized for tabular structured medical data.
+
+## Compute Infrastructure
+
+- Local development machine
+- Python environment with scikit-learn, xgboost, shap, optuna
